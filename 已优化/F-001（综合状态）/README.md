@@ -1,27 +1,28 @@
-# Combined-Status
+# 综合状态
 
-Mod for all versions of Don't Starve and Don't Starve Together. It enhances the HUD to better show the player's stats and various information about the world, such as temperature, season, and moon phase. Also available on the Steam Workshop ([singleplayer](http://steamcommunity.com/sharedfiles/filedetails/?id=574636989), [multiplayer](http://steamcommunity.com/sharedfiles/filedetails/?id=376333686)) and the [Klei Forums](http://forums.kleientertainment.com/files/file/1136-combined-status/).
+适用于《饥荒》和《饥荒联机版》所有版本的模组。它增强了 HUD，能更好地显示玩家的状态和世界的各种信息，如温度、季节和月相。也可在 Steam 创意工坊（[单人版](http://steamcommunity.com/sharedfiles/filedetails/?id=574636989)、[多人版](http://steamcommunity.com/sharedfiles/filedetails/?id=376333686)）以及 [Klei 论坛](http://forums.kleientertainment.com/files/file/1136-combined-status/)获取。
 
-# Installation
+# 安装方法
 
-If you have the game on Steam, it's easiest to subscribe to the mod there. Otherwise, download this and put the folder in the game's mods folder. Then you can enable and configure it on the in-game mods menu.
+如果你在 Steam 上拥有游戏，最简单的方法是在创意工坊订阅此模组。否则，请下载本模组并将文件夹放入游戏的 mods 文件夹。然后你可以在游戏内的模组菜单启用和配置它。
 
-# Configuration Options
+# 配置选项
 
-Option | Description
+选项 | 说明
 ------ | -----------
-**Temperature** | Whether to show the temperature of the player. Defaults to _Show_.
-**Show World Temp** | Whether to show the temperature of the world. Defaults to _Hide_.
-**Show Temp Badges** | Whether to show small images to indicate which temperature is which. Badges only get shown if this is set to _Show_ and both player and world temperatures are enabled. Defaults to _Show_.
-**Temperature Unit** | Whether to use the game's internal units (default), or approximations of Fahrenheit or Celsius. In _Game Units_, the player freezes at 0 and overheats at 70, with warning occurring 5 away. In _Celsius_, the player freezes at 0 and overheats at 35, with warning occurring 2.5 degrees away. In _Fahrenheit_, the player freezes at 32 and overheats at 95, with warning occurring 4.5 degrees away.
-**Show Waning** | Whether to show if the moon is waxing or waning by adding new icons. Defaults to _Show_. (The game normally only shows icons for one direction). In Don't Starve Together, this is now a feature of the main game, so the option doesn't do anything.
-**Show Moon** | Whether to show the moon only at _Night_ (the game's default), during night and dusk (_Dusk_, the mod's default), or _Always_.
-**Predict Full Moon** | Whether to predict the day of the next full moon, shown when hovering over the moon icon. Defaults to _Yes_.
-**Flip Moon** | Whether to flip the moon phase icon to show it like it is in the Southern Hemisphere, instead of the default Northern Hemisphere. Defaults to _No_.
-**Season Clock** | _Clock_, the default, shows a full clock of the seasons. _Compact_ shows a smaller badge with the season and day count, while _Micro_ shows an even smaller badge. _No_ disables the season clock entirely.
-**Naughtiness** | Whether to show the naughtiness of the player. Doesn't work in Don't Starve Together (unless you have [Insight](https://steamcommunity.com/sharedfiles/filedetails/?id=2189004162) installed), as  naughtiness is not available to clients. Defaults to _Show_.
-**Log Meter** | Whether to show the log meter for Woodie when he is human. Only relevant to singleplayer, as Don't Starve Together always shows the log meter already. Defaults to _Always_.
-**Cave Clock** | Whether to always show the clock in the caves. Only relevant to singleplayer Reign of Giants, as the data is not available in vanilla and the clock shows in Don't Starve Together. Defaults to _Show_.
-**Stat Numbers** | Whether to show the sanity, hunger, and health numbers without having to mouse over the badges. Defaults to _Always_.
-**Show Max Text** | Whether to show the "Max:" text when hovering over the sanity, hunger, and health badges to see their maximum values. Defaults to _Show_.
-**HUD Scale** | Lets you adjust the size of the badges and clocks independently of the game's HUD scale. Defaults to _1_.
+**温度** | 是否显示玩家的温度。默认 _显示_。
+**显示世界温度** | 是否显示世界的温度。默认 _隐藏_。
+**显示温度徽章** | 是否显示小图标以区分不同温度。仅当此项为 _显示_ 且玩家和世界温度都启用时才显示徽章。默认 _显示_。
+**温度单位** | 是否使用游戏内部单位（默认），或近似的华氏度或摄氏度。在 _游戏单位_ 下，玩家在 0 时结冰，70 时过热，警告在相差 5 时出现。在 _摄氏度_ 下，玩家在 0 时结冰，35 时过热，警告在相差 2.5 度时出现。在 _华氏度_ 下，玩家在 32 时结冰，95 时过热，警告在相差 4.5 度时出现。
+**显示月亏** | 是否通过新图标显示月亮盈亏。默认 _显示_。（游戏通常只显示一个方向的图标）在《饥荒联机版》中，此功能已成为主游戏特性，因此此选项无效。
+**显示月亮** | 是否仅在 _夜晚_（游戏默认）、夜晚和黄昏（_黄昏_，模组默认）或 _始终_ 显示月亮。
+**预测满月** | 是否预测下一个满月的日期，鼠标悬停在月亮图标时显示。默认 _是_。
+**翻转月亮** | 是否将月相图标翻转，以显示南半球的月亮，而不是默认的北半球。默认 _否_。
+**季节时钟** | 默认 _时钟_ 显示完整的季节时钟。_紧凑_ 显示较小的徽章和季节天数，_微型_ 显示更小的徽章。_无_ 则完全禁用季节时钟。
+**淘气值** | 是否显示玩家的淘气值。在《饥荒联机版》中无效（除非安装了 [Insight](https://steamcommunity.com/sharedfiles/filedetails/?id=2189004162)），因为客户端无法获取淘气值。默认 _显示_。
+**木头值计量表** | 是否在伍迪为人类时显示木头值计量表。仅单人版相关，因为《饥荒联机版》始终显示木头值。默认 _始终_。
+**洞穴时钟** | 是否始终在洞穴中显示时钟。仅单人版巨人国相关，因为原版无此数据，《饥荒联机版》已默认显示时钟。默认 _显示_。
+**属性数值** | 是否无需鼠标悬停即可直接显示理智、饥饿和生命数值。默认 _始终_。
+**显示最大值文本** | 鼠标悬停在理智、饥饿和生命徽章时，是否显示“最大值”文本。默认 _显示_。
+**HUD 缩放** | 可独立于游戏 HUD 缩放调整徽章和时钟的大小。默认 _1_。
+
