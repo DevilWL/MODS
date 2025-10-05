@@ -1,0 +1,32 @@
+Add a greater variety of icons to your map!
+
+Version 1.7
+---
+Inspired by Where's My Beefalo but compatible with Vanilla, Reign of Giants, and Shipwrecked!
+
+Please leave icon requests in the comment section!
+
+The available icons are listed below, each are toggleable in the mod configuration options:
+
+[table]
+[tr][td]Animal Tracks[/td][td]Clockwork Bishop[/td][td]Hay Walls[/td][td]Pig Torches[/td][td]Swordfish[/td][/tr]
+[tr][td]Baby Beefalo[/td][td]Clockwork Knight[/td][td]Limestone Walls[/td][td]Quacken[/td][td]Tentacles[/td][/tr]
+[tr][td]Baby Doydoys[/td][td]Clockwork Rooks[/td][td]Lumpy Treeguards[/td][td]Rabbit Holes[/td][td]Thulecite Walls[/td][/tr]
+[tr][td]Bearger[/td][td]Crabbit Dens[/td][td]Mandrakes[/td][td]Red Mushrooms[/td][td]Tiger Shark[/td][/tr]
+[tr][td]Beefalo[/td][td]Crank Thing[/td][td]Merm Heads[/td][td]Ring Thing[/td][td]Treeguards[/td][/tr]
+[tr][td]Blue Mushrooms[/td][td]Deerclops[/td][td]Metal Potato Thing[/td][td]Rock Lobsters[/td][td]Volt Goats[/td][/tr]
+[tr][td]Bones[/td][td]Doydoys[/td][td]Molehills[/td][td]Sandbags[/td][td]Water Beefalo[/td][/tr]
+[tr][td]Bottlenosed Ballphins[/td][td]Dragonfly[/td][td]Moose/Goose[/td][td]Sealnado[/td][td]Wildbore Heads[/td][/tr]
+[tr][td]Box Thing[/td][td]Flint[/td][td]Packim's Fishbone[/td][td]Skeletons[/td][td]Winter Koalefants[/td][/tr]
+[tr][td]Carrots[/td][td]Flotsams[/td][td]Palm Treeguards[/td][td]Stone Walls[/td][td]Wood Walls[/td][/tr]
+[tr][td]Chester's Eye Bone[/td][td]Green Mushrooms[/td][td]Pig Heads[/td][td]Summer Koalefants[/td][/tr]
+[/table]
+---
+LATEST CHANGE:
+
+[1.7] 2016-09-06
+- Added new icons - walls, treeguards, shipwrecked bosses
+
+Full changelog: https://gitlab.com/star_lion/extended-map-icons/blob/master/CHANGELOG.md
+---
+Source code available on gitlab: https://gitlab.com/star_lion/extended-map-icons/tree/master 
