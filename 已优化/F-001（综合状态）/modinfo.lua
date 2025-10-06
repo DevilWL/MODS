@@ -49,7 +49,7 @@ configuration_options =
 	{
 		name = "SHOWWORLDTEMP",
 		label = "世界温度",
-		hover = "显示/隐藏当前世界的温度值\n(此显示不包含来自火堆等热源的热量影响).",
+		hover = "显示/隐藏当前世界的温度值\n(此显示不包含来自火堆等热源的热量影响)",
 		options =	{
 						{description = "显示", data = true},
 						{description = "隐藏", data = false},
@@ -59,36 +59,34 @@ configuration_options =
 	{
 		name = "SHOWTEMPBADGES",
 		label = "温度图标",
-		hover = "Show images that indicate which temperature is which.",
+		hover = "显示用于区分不同温度的图标",
 		options =	{
-						{description = "显示", data = true, hover = "Badges will only be shown if both temperatures are shown."},
-						{description = "隐藏", data = false, hover = "Badges will never be shown."},
+						{description = "显示", data = true, hover = "仅当同时显示两种温度时才显示图标"},
+						{description = "隐藏", data = false, hover = "不会显示任何温度图标"},
 					},
 		default = true,
 	},	
 	{
 		name = "UNIT",
 		label = "温度单位",
-		hover = "Do the right thing, and leave this on Game.",
+		hover = "建议保持游戏默认单位，除非有特殊需求",
 		options =	{
 						{description = "游戏默认", data = "T",
-							hover = "The temperature numbers used by the game."
-								.."\nFreeze at 0, overheat at 70; get warned 5 from each."},
+							hover = "游戏使用的温度数值。"
+								.."\n0度时会结冰，70度时会过热；距离结冰或过热还有5度时会警告"},
 						{description = "摄氏度", data = "C",
-							hover = "The temperature numbers used by the game, but halved to be more reasonable."
-								.."\nFreeze at 0, overheat at 35; get warned 2.5 from each."},
+							hover = "游戏使用的温度数值，但除以二后更合理。"
+								.."\n0度时会结冰，35度时会过热；距离结冰或过热还有2.5度时会警告"},
 						{description = "华氏度", data = "F",
-							hover = "Your favorite temperature units that make no sense."
-								.."\nFreeze at 32, overheat at 158; get warned 9 from each."},
+							hover = "你最喜欢但不太合理的温度单位。"
+								.."\n32度时会结冰，158度时会过热；距离结冰或过热还有9度时会警告"},
 					},
 		default = "T",
 	},
 	{
 		name = "SHOWWANINGMOON",
 		label = "显示残月",
-		hover = "Show both the waxing and waning moon phases separately."
-			 .. "\nDoesn't do anything in DST, which already shows waxing and waning.",
-		options =	{
+		hover = "显示新月和残月的不同月相图标\n在联机版中已默认显示新月和残月，开启此选项无额外效果",
 						{description = "显示", data = true},
 						{description = "隐藏", data = false},
 					},
@@ -97,19 +95,18 @@ configuration_options =
 	{
 		name = "SHOWMOON",
 		label = "月相图标",
-		hover = "Show the moon phase during day and dusk.",
+		hover = "是否仅在 夜晚（游戏默认）、夜晚和黄昏（黄昏，模组默认）或 始终 显示月亮",
 		options =	{
-						{description = "夜晚显示", data = 0, hover = "Show the moon only at night, like usual."},
-						{description = "黄昏显示", data = 1, hover = "Show the moon during both night and dusk."},
-						{description = "总是显示", data = 2, hover = "Show the moon at all times."},
+						{description = "夜晚显示", data = 0, hover = "仅在夜晚显示月亮（游戏默认）。"},
+						{description = "黄昏显示", data = 1, hover = "在夜晚和黄昏都显示月亮（模组默认）。"},
+						{description = "总是显示", data = 2, hover = "始终显示月亮，无论时间段。"},
 					},
 		default = 1,
 	},
 	{
 		name = "SHOWNEXTFULLMOON",
 		label = "预测满月",
-		hover = "Predicts the day number of the next full moon,"
-			 .. "\nshowing it on the moon badge when moused over.",
+		hover = "预测下一个满月的天数，并在手指悬停月亮图标时显示。",
 		options =	{
 						{description = "开启", data = true},
 						{description = "关闭", data = false},
@@ -120,11 +117,11 @@ configuration_options =
 	{
 		name = "FLIPMOON",
 		label = "反转月相",
-		hover = "Flips the moon phase (Yes restores the old behavior)."
-			.. "\nYes shows the moon as it looks in the Southern Hemisphere.",
+		hover = "反转月相（是为南半球显示，否为北半球显示）。"
+			.. "\n选择“是”将以南半球的方式显示月亮，选择“否”则为北半球显示。",
 		options =	{
-						{description = "南半球", data = true, hover = "Show the moon like it is in Southern Hemisphere."},
-						{description = "北半球", data = false, hover = "Show the moon like it is in the Northern Hemisphere."},
+						{description = "南半球", data = true, hover = "以南半球方式显示月亮。"},
+						{description = "北半球", data = false, hover = "以北半球方式显示月亮。"},
 					},
 		default = false,
 	},
