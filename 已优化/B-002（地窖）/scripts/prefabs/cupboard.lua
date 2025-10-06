@@ -133,14 +133,14 @@ if STOREROOM_DESTROY == "DestroyByPlayer" then
     end)
 end
 
-	    inst:ListenForEvent("snowcoverchange", function()
+	--[[    inst:ListenForEvent("snowcoverchange", function()
 			if GetSeasonManager() and GetSeasonManager().ground_snow_level > SNOW_THRESH then
 				inst.AnimState:PlayAnimation("closed_snow", true)
 			else
 				inst.AnimState:PlayAnimation("closed", true)
 			end
 		end, GetWorld())
-
+]]
 	return inst
 end
 
