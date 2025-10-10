@@ -35,8 +35,8 @@ AddPrefabPostInit("coral_brain", stackablepostinit)  		 --珊瑚脑
 AddPrefabPostInit("lobster", stackablepostinit)      		 --龙虾
 AddPrefabPostInit("minotaurhorn", stackablepostinit) 		 --犀牛角
 AddPrefabPostInit("tallbirdegg", stackablepostinit)  		 --高鸟蛋
-AddPrefabPostInit("doydoy", stackablepostinit)       		 --渡渡鸟
-AddPrefabPostInit("doydoybaby", stackablepostinit)   		 --渡渡鸟宝宝
+--AddPrefabPostInit("doydoy", stackablepostinit)       		 --渡渡鸟
+--AddPrefabPostInit("doydoybaby", stackablepostinit)   		 --渡渡鸟宝宝
 AddPrefabPostInit("magic_seal", stackablepostinit)   		 --海豹纹章
 AddPrefabPostInit("doydoyegg", stackablepostinit)    		 --渡渡鸟蛋
 AddPrefabPostInit("coconade", stackablepostinit)     		 --椰子炸弹
@@ -190,9 +190,24 @@ AddPlayerPostInit(function(inst)
     end
 end)
 end
+-- 狗箱/鸟箱自动回血
+local healthregen_chester = GetModConfigData("healthregen_chester")
+if healthregen_chester == true then
+AddPrefabPostInit("chester", function(inst)
+    if inst.components.health then
+        inst.components.health:StartRegen(GetModConfigData("regen_health_chester"),GetModConfigData("regen_time_chester"))
+    end
+end)
+AddPrefabPostInit("packim", function(inst)
+    if inst.components.health then
+        inst.components.health:StartRegen(GetModConfigData("regen_health_chester"),GetModConfigData("regen_time_chester"))
+    end
+end)
 
---待添加小偷背包保鲜功能，牙齿陷阱自动重置功能，移动速度也添加一个开关，女武神吃素等相关人物修改，人物自带格子也能保鲜等，
+end
 
+--待添加小偷背包保鲜功能，牙齿陷阱自动重置功能
+--回旋镖自动接，老奶奶可以睡觉等常用功能
 ------------女武神吃素----------------------------
 local wathgrithr_vegetarian = GetModConfigData("wathgrithr_vegetarian")
 if wathgrithr_vegetarian == true then

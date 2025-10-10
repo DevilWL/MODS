@@ -212,7 +212,6 @@ configuration_options =
 		default = false
 	},
 	
-	
 	{
 		name = "regen_time",
 		label = "角色每次回血间隔",
@@ -225,8 +224,6 @@ configuration_options =
 		},
 		default = 5
 	},
-	
-	
 	
 	{
 		name = "regen_health",
@@ -246,8 +243,49 @@ configuration_options =
 	},
 
 	{
+		name = "healthregen_chester",
+		label = "提高狗箱鸟箱回血",
+		options = 
+		{
+			{description = "关闭", data = false},
+			{description = "开启", data = true},
+		},
+		default = false
+	},
+
+	{
+		name = "regen_time_chester",
+		label = "狗箱鸟箱回血间隔",
+		options = 
+		{
+			{description = "1秒", data = 1},
+			{description = "3秒", data = 3},
+			{description = "5秒", data = 5},
+			{description = "10秒", data = 10},
+		},
+		default = 1
+	},
+
+	{
+		name = "regen_health_chester",
+		label = "狗箱鸟箱回复血量",
+		options = 
+		{
+			{description = "1", data = 1},
+			{description = "3", data = 3},
+			{description = "5", data = 5},
+			{description = "10", data = 10},
+			{description = "100", data = 100},
+			{description = "250", data = 250},
+			{description = "500", data = 500},
+			{description = "999", data = 999},
+		},
+		default = 250
+	},
+
+	{
 		name = "wathgrithr_vegetarian",
-		label = "女武神吃素",
+		label = "是否让女武神吃素",
 		options = 
 		{
 			{description = "关闭", data = false},
