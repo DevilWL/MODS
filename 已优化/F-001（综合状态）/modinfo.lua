@@ -21,7 +21,7 @@ icon = "combinedstatus.tex"
 forumthread = ""
 
 --[[
-Credits:
+感谢致敬原作者们:
 	Kiopho for writing the original mod and giving me permission to maintain it for DST!
 	Soilworker for making SeasonClock and allowing me to incorporate it
 	hotmatrixx for making BetterMoon and allowing me to incorporate it
@@ -117,11 +117,11 @@ configuration_options =
 	{
 		name = "FLIPMOON",
 		label = "反转月相",
-		hover = "Flips the moon phase (Yes restores the old behavior)."
-			.. "\nYes shows the moon as it looks in the Southern Hemisphere.",
+		hover = "反转月相（开启将恢复旧的显示方式）。"
+			.. "\n开启后月相显示为南半球的样式。",
 		options =	{
-						{description = "南半球", data = true, hover = "Show the moon like it is in Southern Hemisphere."},
-						{description = "北半球", data = false, hover = "Show the moon like it is in the Northern Hemisphere."},
+						{description = "南半球", data = true, hover = "以南半球的样式显示月相。"},
+						{description = "北半球", data = false, hover = "以北半球的样式显示月相。"},
 					},
 		default = false,
 	},
@@ -129,20 +129,19 @@ configuration_options =
 	{
 		name = "SEASONOPTIONS",
 		label = "季节时钟",
-		hover = "Adds a clock that shows the seasons, and rearranges the status badges to fit better."
-		.."\nAlternatively, adds a badge that shows days into the season and days remaining when moused over.",
+		hover = "默认时钟:显示完整的季节时钟。紧凑:显示较小的徽章和季节天数，微型:显示更小的徽章。关闭:则完全禁用季节时钟（选择“关闭”即不显示季节时钟）。",
 		options =	{
-						{description = "Micro", data = "Micro"},
-						{description = "Compact", data = "Compact"},
+						{description = "微型", data = "Micro"},
+						{description = "紧凑", data = "Compact"},
 						{description = "开启", data = "Clock"},
-						{description = "关闭", data = ""},
+						{description = "关闭", data = "unClock"},
 					},
 		default = "Clock",
 	},
 	{
 		name = "SHOWNAUGHTINESS",
 		label = "淘气数值",
-		hover = "Show the naughtiness of the player.\nDoes not work in Don't Starve Together.",
+		hover = "是否显示玩家的淘气值。",
 		options =	{
 						{description = "显示", data = true},
 						{description = "隐藏", data = false},
@@ -152,7 +151,7 @@ configuration_options =
 	{
 		name = "SHOWBEAVERNESS",
 		label = "木头树值",
-		hover = "Show the log meter for Woodie when he is human.\nDoes not work in Don't Starve Together.",
+		hover = "是否在伍迪为人类时显示木头值计量表。",
 		options =	{
 						{description = "一直显示", data = true},
 						{description = "海狸显示", data = false},
@@ -162,7 +161,7 @@ configuration_options =
 	{
 		name = "HIDECAVECLOCK",
 		label = "洞穴时钟",
-		hover = "Show the clock in the caves. Only works for Reign of Giants single-player.",
+		hover = "是否始终在洞穴中显示时钟。",
 		options =	{
 						{description = "显示", data = false},
 						{description = "隐藏", data = true},
@@ -172,30 +171,30 @@ configuration_options =
 	{
 		name = "SHOWSTATNUMBERS",
 		label = "数值显示",
-		hover = "Show the health, hunger, and sanity numbers.",
+		hover = "显示生命、饥饿和精神的数值。",
 		options =	{
 						{description = "当前/最大", data = "Detailed"},
-						{description = "一直显示", data = true},
-						{description = "浮窗显示", data = false},
+						{description = "一直显示", data = "Always"},
+						{description = "浮窗显示", data = "Tooltip"},
 					},
-		default = true,
+		default = "Always",
 	},
---[[	
+ 	--[[	
 	{
 		name = "SHOWMAXONNUMBERS",
 		label = "数值信息",
-		hover = "Show the \"Max:\" text on the maximum stat numbers to make it clearer.",
+		hover = "在最大数值旁显示“最大值”字样，使信息更清晰。",
 		options =	{
 						{description = "显示", data = true},
 						{description = "隐藏", data = false},
 					},
 		default = true,
 	},
-]]	
+	]]	
 	{
 		name = "SHOWCLOCKTEXT",
 		label = "时钟信息",
-		hover = "Show the text on the clock (day number) and season clock (current season).\nIf hidden, the text will only be shown when hovering over.",
+		hover = "显示时钟上的文字（天数）和季节时钟上的文字（当前季节）。\n如果隐藏，只有鼠标悬停时才会显示文字。",
 		options =	{
 						{description = "显示", data = true},
 						{description = "隐藏", data = false},
@@ -205,9 +204,9 @@ configuration_options =
 	{
 		name = "HUDSCALEFACTOR",
 		label = "图标大小",
-		hover = "Lets you adjust the size of the badges and clocks independently of the rest of the game HUD scale.",
+		hover = "允许你独立调整图标和时钟的大小，不受游戏 HUD 缩放影响。\n默认值 100 代表 100% 缩放。",
 		options = hud_scale_options,
-		default = 100,
+		default = 100, -- 100 表示 100% 缩放
 	},	
 }
 
