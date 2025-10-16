@@ -87,6 +87,7 @@ configuration_options =
 		name = "SHOWWANINGMOON",
 		label = "显示残月",
 		hover = "显示新月和残月的不同月相图标\n在联机版中已默认显示新月和残月，开启此选项无额外效果",
+		options =	{
 						{description = "显示", data = true},
 						{description = "隐藏", data = false},
 					},
@@ -106,7 +107,6 @@ configuration_options =
 	{
 		name = "SHOWNEXTFULLMOON",
 		label = "预测满月",
-		hover = "预测下一个满月的天数，并在手指悬停月亮图标时显示。",
 		options =	{
 						{description = "开启", data = true},
 						{description = "关闭", data = false},
@@ -117,11 +117,11 @@ configuration_options =
 	{
 		name = "FLIPMOON",
 		label = "反转月相",
-		hover = "反转月相（是为南半球显示，否为北半球显示）。"
-			.. "\n选择“是”将以南半球的方式显示月亮，选择“否”则为北半球显示。",
+		hover = "Flips the moon phase (Yes restores the old behavior)."
+			.. "\nYes shows the moon as it looks in the Southern Hemisphere.",
 		options =	{
-						{description = "南半球", data = true, hover = "以南半球方式显示月亮。"},
-						{description = "北半球", data = false, hover = "以北半球方式显示月亮。"},
+						{description = "南半球", data = true, hover = "Show the moon like it is in Southern Hemisphere."},
+						{description = "北半球", data = false, hover = "Show the moon like it is in the Northern Hemisphere."},
 					},
 		default = false,
 	},
@@ -210,3 +210,5 @@ configuration_options =
 		default = 100,
 	},	
 }
+
+
