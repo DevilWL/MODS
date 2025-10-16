@@ -127,18 +127,6 @@ configuration_options =
 	},
 	]]
 	{
-		name = "SEASONOPTIONS",
-		label = "季节时钟",
-		hover = "默认时钟:显示完整的季节时钟。紧凑:显示较小的徽章和季节天数，微型:显示更小的徽章。关闭:则完全禁用季节时钟（选择“关闭”即不显示季节时钟）。",
-		options =	{
-						{description = "微型", data = "Micro"},
-						{description = "紧凑", data = "Compact"},
-						{description = "开启", data = "Clock"},
-						{description = "关闭", data = "unClock"},
-					},
-		default = "Clock",
-	},
-	{
 		name = "SHOWNAUGHTINESS",
 		label = "淘气数值",
 		hover = "是否显示玩家的淘气值。",
@@ -159,6 +147,18 @@ configuration_options =
 		default = true,
 	},	
 	{
+		name = "SEASONOPTIONS",
+		label = "季节时钟",
+		hover = "默认时钟:显示完整的季节时钟。紧凑:显示较小的徽章和季节天数，微型:显示更小的徽章。关闭:则完全禁用季节时钟（选择“关闭”即不显示季节时钟）。",
+		options =	{
+						{description = "微型", data = "Micro"},
+						{description = "紧凑", data = "Compact"},
+						{description = "开启", data = "Clock"},
+						{description = "关闭", data = "unClock"},
+					},
+		default = "Clock",
+	},
+	{
 		name = "HIDECAVECLOCK",
 		label = "洞穴时钟",
 		hover = "是否始终在洞穴中显示时钟。",
@@ -168,17 +168,6 @@ configuration_options =
 					},
 		default = false,
 	},	
-	{
-		name = "SHOWSTATNUMBERS",
-		label = "数值显示",
-		hover = "显示生命、饥饿和精神的数值。",
-		options =	{
-						{description = "当前/最大", data = "Detailed"},
-						{description = "一直显示", data = "Always"},
-						{description = "浮窗显示", data = "Tooltip"},
-					},
-		default = "Always",
-	},
  	--[[	
 	{
 		name = "SHOWMAXONNUMBERS",
@@ -200,6 +189,17 @@ configuration_options =
 						{description = "隐藏", data = false},
 					},
 		default = true,
+	},
+	{
+		name = "SHOWSTATNUMBERS",
+		label = "数值显示",
+		hover = "显示生命、饥饿和精神的数值。",
+		options =	{
+						{description = "当前/最大", data = "Detailed"},
+						{description = "一直显示", data = "Always"},
+						{description = "浮窗显示", data = "Tooltip"},
+					},
+		default = "Always",
 	},	
 	{
 		name = "HUDSCALEFACTOR",
