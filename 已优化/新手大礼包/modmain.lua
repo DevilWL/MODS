@@ -179,7 +179,7 @@ AddPrefabPostInit("tumbleweed", MOD_QuickPick) --风滚草
 local healthregen = GetModConfigData("healthregen")
 -- 增加血量回复开关
 if healthregen == true then
-AddPlayerPostInit(function(inst)
+    AddPlayerPostInit(function(inst)
     -- 在玩家实体初始化后执行
     if inst.components.health then
         -- 参数1: 每秒回血量
@@ -188,22 +188,21 @@ AddPlayerPostInit(function(inst)
         -- 可选：设置最大生命值为威尔逊的标准值
         --inst.components.health:SetMaxHealth(TUNING.WILSON_HEALTH)
     end
-end)
+    end)
 end
 -- 狗箱/鸟箱自动回血
 local healthregen_chester = GetModConfigData("healthregen_chester")
-if healthregen_chester == true then
-AddPrefabPostInit("chester", function(inst)
+    if healthregen_chester == true then
+    AddPrefabPostInit("chester", function(inst)
     if inst.components.health then
         inst.components.health:StartRegen(GetModConfigData("regen_health_chester"),GetModConfigData("regen_time_chester"))
     end
-end)
-AddPrefabPostInit("packim", function(inst)
+    end)
+    AddPrefabPostInit("packim", function(inst)
     if inst.components.health then
         inst.components.health:StartRegen(GetModConfigData("regen_health_chester"),GetModConfigData("regen_time_chester"))
     end
-end)
-
+    end)
 end
 
 --待添加小偷背包保鲜功能，牙齿陷阱自动重置功能
