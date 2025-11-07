@@ -284,6 +284,65 @@ configuration_options =
 	},
 
 	{
+		name = "TTAutoTime",
+		label = "牙齿陷阱自动重置",
+		options =	{
+						{description = "0.1s", data = .1},
+						{description = "1s", data = 1},
+						{description = "3s", data = 3},
+						{description = "5s", data = 5},
+						{description = "10s", data = 10},
+						{description = "15s", data = 15},
+						{description = "30s", data = 30},
+						{description = "60", data = 60},
+						{description = "不重置", data = 9999999},
+					},
+		default = 3,
+	},
+	--[[
+	{
+		name = "TTStackNum",
+		label = "牙齿陷阱堆叠上限",
+		options =	{
+						{description = "不堆叠", data = 1},
+						{description = "20", data = 20},
+						{description = "40", data = 40},
+						{description = "99", data = 99},
+						{description = "999", data = 999},  
+					},
+		default = 99,
+	},
+	]]
+	{
+		name = "TTDamage",
+		label = "牙齿陷阱伤害调整",
+		options =	{
+						{description = "34", data = 34},
+						{description = "68", data = 68},
+						{description = "100", data = 100},
+						{description = "200", data = 200},
+						{description = "500", data = 500},
+						{description = "999", data = 999},  
+					},
+		default = 68,
+	},
+	{
+		name = "ECAutoTime",
+		label = "仙掌陷阱自动重置",
+		options =	{
+						{description = "0.1s", data = .1},
+						{description = "1s", data = 1},
+						{description = "3s", data = 3},
+						{description = "5s", data = 5},
+						{description = "10s", data = 10},
+						{description = "15s", data = 15},
+						{description = "30s", data = 30},
+						{description = "60", data = 60},
+						{description = "不重置", data = 9999999},
+					},
+		default = 3,
+	},
+	{
 		name = "wathgrithr_vegetarian",
 		label = "是否让女武神吃素",
 		options = 

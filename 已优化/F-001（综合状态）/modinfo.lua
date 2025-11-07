@@ -107,6 +107,7 @@ configuration_options =
 	{
 		name = "SHOWNEXTFULLMOON",
 		label = "预测满月",
+		hover = "预测下一个满月的天数，并在手指悬停月亮图标时显示。",
 		options =	{
 						{description = "开启", data = true},
 						{description = "关闭", data = false},
