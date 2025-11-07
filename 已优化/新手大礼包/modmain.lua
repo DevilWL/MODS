@@ -3,14 +3,14 @@
 ---------------------------------------------------------------
 -- 新手大礼包MOD集合，包含堆叠上限修改、冰箱保鲜、移动速度修改、自动回血、快速采集等常用功能
 -- MOD作者：Devil
--- 感谢各位原作者提供的功能支持与许可
--- 转载请注明出处与作者
 ------------------------------全局赋值--------------------------
 _G = GLOBAL
 ------------------------------陷阱配置--------------------------
+--"TTAutoTime"是牙齿陷阱自动重置配置项名称
 _G.AutoTimeConfigTrap_Teeth = GetModConfigData("TTAutoTime")
 _G.DamageConfigTrap_Teeth = GetModConfigData("TTDamage")
 --_G.StackNumConfigTrap_Teeth = GetModConfigData("TTStackNum")
+--"ECAutoTime"是仙人掌陷阱自动重置配置项名称
 _G.AutoTimeConfigElephantcactus = GetModConfigData("ECAutoTime")
 ---------------------------------------------------------------
 ------------------------------堆叠上限--------------------------
@@ -48,14 +48,14 @@ AddPrefabPostInit("coral_brain", stackablepostinit)  		 --珊瑚脑
 AddPrefabPostInit("lobster", stackablepostinit)      		 --龙虾
 AddPrefabPostInit("minotaurhorn", stackablepostinit) 		 --犀牛角
 AddPrefabPostInit("tallbirdegg", stackablepostinit)  		 --高鸟蛋
---AddPrefabPostInit("doydoy", stackablepostinit)       		 --渡渡鸟
---AddPrefabPostInit("doydoybaby", stackablepostinit)   		 --渡渡鸟宝宝
 AddPrefabPostInit("magic_seal", stackablepostinit)   		 --海豹纹章
 AddPrefabPostInit("doydoyegg", stackablepostinit)    		 --渡渡鸟蛋
 AddPrefabPostInit("coconade", stackablepostinit)     		 --椰子炸弹
 AddPrefabPostInit("obsidiancoconade", stackablepostinit)	 --黑曜石炸弹
 AddPrefabPostInit("beemine", stackablepostinit)     		 --蜜蜂地雷
 AddPrefabPostInit("quackenbeak", stackablepostinit)   		 --海妖喙
+--AddPrefabPostInit("doydoy", stackablepostinit)       		 --渡渡鸟
+--AddPrefabPostInit("doydoybaby", stackablepostinit)   		 --渡渡鸟宝宝
 
 -- 单独设置金币和暗影燃料的数量，方便将来配合RPG类型模组使用
 AddPrefabPostInit("dubloon", stackabledubloonnightmarefuel)
@@ -74,7 +74,6 @@ AddPlayerPostInit(function(inst)
 inst:AddTag("fridge")
 end)
 end
-
 
 local backpackfridge = GetModConfigData("backpackfridge")
 
@@ -117,16 +116,16 @@ if backpackfridge == true then
 	AddPrefabPostInit("piratepack", fridgebackpack)
 end
 
---backpack --背包1
---icepack --保鲜包1
---krampus_sack --小偷包
---mailpack --邮箱包1
---piggyback --小猪包1
---piratepack --海盗背包1
---seasack --海上保鲜袋1
---spicepack --厨师包1
---thatchpack --编织袋1
-	
+--backpack      --背包
+--piggyback     --小猪包
+--krampus_sack  --小偷包
+--thatchpack    --编织袋
+--mailpack      --邮箱包
+--piratepack    --海盗背包
+--seasack       --海上保鲜袋
+--spicepack     --厨师包
+--icepack       --保鲜包
+
 -- 冰箱保鲜程度
 TUNING.PERISH_FRIDGE_MULT = GetModConfigData("icebox_freeze")
 
@@ -218,8 +217,8 @@ local healthregen_chester = GetModConfigData("healthregen_chester")
     end)
 end
 
---待添加小偷背包保鲜功能，牙齿陷阱自动重置功能
---回旋镖自动接，老奶奶可以睡觉等常用功能
+-- 待添加小偷背包保鲜功能，牙齿陷阱自动重置功能
+-- 回旋镖自动接，老奶奶可以睡觉等常用功能
 ------------女武神吃素----------------------------
 local wathgrithr_vegetarian = GetModConfigData("wathgrithr_vegetarian")
 if wathgrithr_vegetarian == true then
